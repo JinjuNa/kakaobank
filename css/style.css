@@ -14,6 +14,8 @@ a{
 
 .headerTop{
     border-bottom:1px solid #333;
+    z-index: 10;
+    
 }
 header{
     height: 680px;
@@ -27,44 +29,132 @@ nav{
     width: 1080px;
     margin:0 auto;
     height: 80px;
-    position: relative;
+    /* padding-top:30px; */
+    box-sizing: border-box;
+    text-align: right;
     /* font-family: 'Yoon 윤고딕','돋움',dotum,sans-serif; */
     
 }
 
 h1{
+    position: absolute;
+    top:30px;
+    left:250px;
+    
+}
+
+h1 a{
     width:116px;
     display: block;
     text-indent: -9999px;
     background-image: url(../img/img_kabang.png);
     background-repeat: no-repeat;
-    position:absolute;
-    top:30px;
-    left:0; 
+    
         
 }
 
-.menu{
-    position: absolute;
-    top:0;
-    right:50px;
+/* 마우스 오버시 header */
+
+.headerTop.on{
+    background-color:#fff;
+}
+
+.headerTop.on h1 a{
+    background-image: url(../img/img_kabang.png);
+    background-position:0 -30px;
 
 }
 
-.menu:after{
+.menu{
+    /* position: absolute;
+    top:0;
+    right:50px; */
+
+}
+
+/* .menu:after{
     display: block;
     content:'';
     clear:both;
-}
+} */
 
-.menu li{
-    float: left;
+.menu>li{
+    display: inline-block;
     color:white;
-    margin:0 20px;
+    padding:0 20px;
     line-height: 80px;
     font-weight: bold;
 }
 
+
+
+/* 어떻게 처리하지.. */
+.menu>li:hover{
+    border-bottom:2px solid #000;
+    
+    /* color:black; */
+
+}
+
+.menu li:hover{
+    text-decoration:underline;
+}
+/* 마우스 오버시 믿줄 */
+
+.subwrap{
+    
+    padding:50px 0;
+    width:100%;
+    background-color:white;
+    position: absolute;
+    top:80px;
+    left:0;
+    text-align: center;
+    color:black;
+    z-index: 1;
+    
+}
+
+
+.sub{
+    width:1080px;
+    margin:0 auto;
+}
+.sub:after{
+    float:left;
+    clear:both;
+    content:'';
+}
+
+.sub>li{
+    float:left;
+    font-weight: 700;
+    font-size:16px;
+    
+    
+}
+
+.subwrap{
+    display: none;
+}
+
+
+.sub1>li{
+    width:20%;
+}
+.sub2>li{
+    width:25%;
+}
+.sub3>li{
+    width:20%;
+}
+
+
+.sublinks>li{
+    font-weight: 300;
+    height: 40px;
+    font-size:14px;
+}
 .intro .mainTitle{
     text-align: center;
     font-size:53px;
@@ -101,6 +191,10 @@ h1{
     height: 64px;
 }
 
+.link span:hover{
+    text-decoration: underline;
+}
+
 .link span{
     display: inline-block;
 }
@@ -135,6 +229,7 @@ h1{
     height: 64px;
     line-height: 64px;
     border-radius: 5px;
+    box-shadow: 3px 3px #666;
 }
 
 .submit .txt_submit{
@@ -195,6 +290,10 @@ h3{
     margin:30px 0;
     text-align: center;
     font-weight: 500;  
+}
+
+.more a:hover{
+    text-decoration: underline;
 }
 
 .more img{
@@ -345,6 +444,13 @@ h3{
 .row7 .more{
     width:258px;
     display: inline-block;
+}
+
+/* .slider li{
+    float:left;
+} */
+.slider img{
+    width: 300px;
 }
 
 .row8{
