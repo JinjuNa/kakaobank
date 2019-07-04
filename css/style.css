@@ -402,3 +402,105 @@ h3{
     color:#666;
     font-weight: 200;
 }
+
+/* section */
+
+footer{
+    height: 140px;
+    background-color:#eee;
+    
+}
+
+.footIn{
+    width:1080px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footmenu{
+    padding:30px 0 5px 0;
+}
+
+.footmenu:after{
+    display: block;
+    clear:both;
+    content:'';
+}
+
+.footmenu li{
+    float:left;
+    margin:0 5px;
+    font-size:14px;
+}
+
+.footmenu li:nth-child(3){
+    font-weight: 700;
+}
+
+.footmenu li:nth-child(4){
+    font-weight: 700;
+}
+
+.footmenu li:nth-child(5){
+    font-weight: 700;
+}
+
+.footmenu li:first-child{
+    margin-left:0;
+}
+.sns{
+    position: absolute;
+    right: 0;
+    top:100px;
+
+}
+
+.sns li{
+    float: left;
+    text-indent: -9999px;
+    margin: 0 10px;
+    
+}
+
+.sns li a{
+    display: block;
+    background-image: url(../img/img_kabang.png);
+    background-repeat: no-repeat;
+    
+    height: 20px;
+}
+
+.sns li:nth-child(1) a{
+    width: 10px;
+    background-position: -120px -360px;
+}
+
+.sns li:nth-child(2) a{
+    width: 12px;
+    background-position: -140px -360px;
+}
+
+.sns li:nth-child(3) a{
+    width: 14px;
+    background-position: -389px -360px;
+}
+
+.sns li:nth-child(4) a{
+    width: 23px;
+    margin-top:2px;
+    background-position: -160px -360px;
+}
+
+.call1{
+    font-weight: 700;
+}
+
+.call2{
+    color:#666;
+}
+
+.copy{
+    margin-left: 10px;
+    color:#666;
+    font-size: 10px;
+}
