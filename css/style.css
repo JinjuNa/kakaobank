@@ -124,19 +124,24 @@ header.on h1 a{
 }
 
 /* 어떻게 처리하지.. */
-.menu>li a:hover{
+.menu>li>a:hover{
     
     
-    
+
     border-bottom:2px solid #000;
     
     /* color:black; */
 
 }
 
-.menu li:hover{
+
+.menu>li:hover{
     text-decoration:underline;
 }
+
+/* .sub>li:hover{
+    text-decoration:underline;
+} */
 /* 마우스 오버시 믿줄 */
 
 .subwrap{
