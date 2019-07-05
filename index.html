@@ -19,7 +19,7 @@
     <div id="wrap">
         <header id="header1">
             <div class="headerTop">
-                <h1><a href="#">카카오뱅크 로고</a></h1>
+                <h1><a href="index.html">카카오뱅크 로고</a></h1>
             <nav>
                 
 
@@ -97,10 +97,10 @@
                         </ul>
                     </div>
                     </li>
-                    <li id="menu3"><a href="#">고객센터</a>
+                    <li id="menu3"><a href="help.html">고객센터</a>
                     <div class="subwrap">
                         <ul class="sub sub3">
-                            <li><a href="#">이용안내</a>
+                            <li><a href="help.html">이용안내</a>
                                 <ul class="sublinks">
                                     <li><a href="#">자주 묻는 질문</a></li>
                                     <li><a href="#">이용시간 안내</a></li>
@@ -145,7 +145,7 @@
                             </li>
                         </ul>
                     </div></li>
-                    <li id=menu4><a href="#">이벤트</a></li>
+                    <li id=menu4><a href="./event.html">이벤트</a></li>
                 </ul>
             </nav>
             </div>
@@ -507,6 +507,8 @@
     </div>
 
     <script>
+
+
         $('.sublinks>li').on('mouseover', function(){
             $(this).css('textDecoration', 'underline');
         }).on('mouseout',function(){
@@ -524,14 +526,16 @@
         });
 
         $(".regular").slick({
+        autoplaySpeed:400,
         autoplay:true,
-        dots: false,
+        dots: true,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows:false,
         centerMode: false,
       });
+
     
     </script>
 </body>

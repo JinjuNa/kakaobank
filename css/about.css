@@ -117,6 +117,30 @@ h3{
     position: relative;
 }
 
+.slick-dots{
+    margin-top:20px;
+    text-align: center;
+}
+
+.slick-dots li{
+    display: inline-block;
+    margin:0 2px;
+}
+
+.slick-dots li button{
+    text-indent: -9999px;
+    width:8px;
+    height: 8px;
+    background-color:#777;
+    border:none;
+    border-radius: 50%;
+    
+}
+
+.slick-dots li.slick-active button{
+    background-color: #313955;
+}
+
 /* .row5 */
 
 .row5{
@@ -155,4 +179,8 @@ h3{
     line-height: 50px;
     text-align: center;
     display: inline-block;
+}
+
+.more a:hover{
+    text-decoration: underline;
 }

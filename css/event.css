@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+.headerTop{
+    background-color: #313955;
+}
+
+#menu2>a{
+
+    border-bottom:2px solid #000;
+}

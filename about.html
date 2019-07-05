@@ -23,10 +23,10 @@
                         
         
                         <ul class="menu">
-                            <li id="menu1"><a href="#">은행소개</a>
+                            <li id="menu1"><a href="./about.html">은행소개</a>
                                 <div class="subwrap">
                                 <ul class="sub sub1">
-                                    <li><a href="#">카카오뱅크</a>
+                                    <li><a href="./about.html">카카오뱅크</a>
                                         <ul class="sublinks">
                                             <li><a href="#">브랜드</a></li>
                                             <li><a href="#">주주사 소개</a></li>
@@ -96,10 +96,10 @@
                                 </ul>
                             </div>
                             </li>
-                            <li id="menu3"><a href="#">고객센터</a>
+                            <li id="menu3"><a href="./help.html">고객센터</a>
                             <div class="subwrap">
                                 <ul class="sub sub3">
-                                    <li><a href="#">이용안내</a>
+                                    <li><a href="./help.html">이용안내</a>
                                         <ul class="sublinks">
                                             <li><a href="#">자주 묻는 질문</a></li>
                                             <li><a href="#">이용시간 안내</a></li>
@@ -144,7 +144,7 @@
                                     </li>
                                 </ul>
                             </div></li>
-                            <li id=menu4><a href="#">이벤트</a></li>
+                            <li id=menu4><a href="./event.html">이벤트</a></li>
                         </ul>
                     </nav>
                     </div>
@@ -156,6 +156,29 @@
         
                     </div>
                 </header>
+
+                <script>
+                        window.onload = function() {
+                           scrolly();
+                        }; 
+        
+                        $(window).on('scroll',function(){
+        
+                        var scr = $(this).scrollTop();
+                        var point = $('.row1').offset().top-250;
+        
+                        if(scr>=point){
+                            $('header').addClass('on');
+                            $('.menu>li').parents('.headerTop').addClass('on');
+                        
+                        }else if(scr===0){
+                            $('header').removeClass('on');
+                            
+                        }
+        
+        
+                        })
+                     </script>
                 <!-- header -->
                 <div id="article">
                 <section class="row1">
@@ -415,10 +438,10 @@
 
                     <div class="download">
                         <div class="more">
-                                GUIDE 파일 다운로드
+                                <a href="#">GUIDE 파일 다운로드</a>
                         </div>
                         <div class="more">
-                                 AI 파일 다운로드
+                                 <a href="#">AI 파일 다운로드</a>
                         </div>
                     </div>
                     
@@ -475,6 +498,8 @@
     </div>
 
         <script>
+
+            
         $('.menu>li').on('mouseover', function(){
             $(this).children('.subwrap').stop().slideDown();
             $(this).addClass('on').siblings().removeClass('on');
@@ -489,7 +514,7 @@
         autoplay:true,
         dots: false,
         infinite: true,
-        
+        autoplaySpeed:700,
         slidesToScroll: 1,
         arrows:false,
         fade:true,
@@ -497,11 +522,12 @@
 
       $(".video").slick({
         autoplay:true,
-        dots: false,
+        dots: true,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows:false,
+        autoplaySpeed:1000,
         
       });
     
