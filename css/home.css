@@ -304,46 +304,38 @@ h3{
     float:left;
 } */
 .slider img{
-    width: 300px;
+    width: 250px;
     margin:0 auto;
 }
 
 .sliderwrap{
     width:1080px;
     margin:0 auto;
+    position: relative;
 }
 
-/* slick-dots */
-/* .slick-dots{
-    position: absolute;
-    bottom:20px;
-    left:0;
-    width:100%;
-    text-align: center;
-}
-.slick-dots li{
-    display: inline-block;
-}
-.slick-dots li a{
+.button .button_prev{
     display: block;
-    width:10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color:#ccc;
-    font-size:0;
-    border:1px solid #333;
-    
-    margin:0 5px;
-    text-indent: -9999px;
-    
-    
-
+    background-position: -510px 0;
+    background-image: url(../img/main.png);
+    width:60px;
+    height: 70px;
+    position: absolute;
+    top:600px;
+    left:200px;
 }
 
-.slick-dots li.slick-active a{
-    background-color:#b91131;
-    
-} */
+.button .button_next{
+    display: block;
+    background-position: -580px 0;
+    background-image: url(../img/main.png);
+    width:60px;
+    height: 70px;
+    position: absolute;
+    top:600px;
+    right: 200px;
+}
+
 
 .slick-dots{
     margin-top:20px;
